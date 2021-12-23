@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+  background-color: #141414;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+body .page{
+  margin: 20px 80px;
+}
+/* navigation */
+
+nav{
+  /*   display:flex; TO LET THEM IN THE Same line */
+  display:flex;
+  flex-wrap:wrap;
+  /* flex-wrap:nowrap; let them fix   flex-wrap:wrap; do what i tell you flex-wrap: wrap-reverse; ltke wrap but in overturned  */
+  justify-content: space-between; 
+  /* justify-content: space-between; to cut the width of the pages about em
+  justify-content: space-around; to le the spaces in the sides but its still smoller then the others
+  justify-content: space-evenly; to let the spaces around it iquil to the spaces in the midle
+    justify-content:center; to put them in the center 
+     justify-content:flex-start; the take the in the start like display:flex;  
+  justify-content:flex-end; to put  em in the end    */
+  position:sticky; 
+  /*position:sticky; it means it will fixid as i do after TOOOOP:0; 
+  position:static; its default   position:relative; i dont know the diifernt between them hhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    position:absolute; it can be anny where you have to do acctuly i most do it to control the place of it
+     position:fixed is simple its fix;
+   position:sticky;  */
+  top: 0;
+  background-color: #141414;
+  padding: 10px ;
+}
+#logoo{
+  height: 70;
+  }
+
+nav .onglets{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top: 5px;
+  /*align-items: center;*/
+  
+}
+a{text-decoration: none;
+}
+/*.checkbtn{
+  font-size: 1000px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px; 
+  cursor: pointer;
+  z-index: 10000000 !important; 
+}*/
+.fasfa-bars ::before{
+  content: '\f0c9';
+  font-family:"FontAwesome";
+}
+nav #a1:hover{
+  color: aqua;
+}
+nav #a2:hover{
+  color: aqua;
+}
+nav #a3:hover{
+  color: aqua;
+}
+nav #a4:hover{
+  color: aqua;
+}
+nav .onglets a {
+  color: white;
+  margin-right: 20px;
+  cursor:pointer;
+  align-items: center;
+  /*cursor:pointer; whe the mousse be on the menu change to hand*/
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+/* Header */
+header{
+  margin-top: 40px;
+  background: url('AAA.jpg');
+  background-repeat: no-repeat;
+  /*background-repeat: no-repeat; to dont repeat back ground of image
+  background-repeat: repeat-x; to repeat it in width
+  background-repeat: repeat-y; to repeat it in the hieght
+  */
+  background-size: 100%;
+  background-position: center;
+}
+header h1{
+  text-align:center;
+  font-size: 60px;
+  padding: 150px;}
+ /* transition: transform 2.5s;*/
+ footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color:#828282;
+  }
+  footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .auto{
+    color:#828282;
+   
+  }
+/*.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}*/
+.mobile-nav-toggle{
+  display: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.contact-section{
+  background: url(bg.jpg) no-repeat center;
+  background-size: 100%;
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+@media screen and (max-width: 940px){
+  body .page{
+    margin: 10px;
+  }
+  nav .onglets{
+   /* display:none;*/
+  }
+  header{
+    margin-top: 20px;
+    background-size: 100%;
+  }
+  header h1{
+    font-size: 20px;
+    padding: 100px;
+  }
+  #logoo{
+    height: 40px;
+    }
+} 
+@media screen and (max-width:500px){
+  .onglets{
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh,10rem) 2em;
+    /*background: htl(0 0% / 0.1);*/
+    background:hsl(0 0% 100% / 0.1);
+    backdrop-filter:blur(1rem) ;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in ;
+  }
+  .onglets[data-visible="true"]{
+    transform: translateX(0%);
+  }
+  .onglets a{
+   margin-bottom: 20px;
+  }
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    background: url(menu.png) no-repeat center;
+    width: 2rem;
+    aspect-ratio: 1;
+    top:3%;
+    right: 3%;
+    border-style: none;
+
+    
+  }
+}
+
+/*@media screen and (max-width: 500px){
+  body .page{
+    overflow-x: hidden;
+  }
+  
+   .onglets{
+       position: absolute;
+       right: 0%;
+       height: 92vh;
+       top: 8vh;
+       background-color: rgb(0, 0, 0);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       justify-content: space-evenly;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+   a{
+    opacity: 0;
+}
+   header{
+    margin-top: 20px;
+    background-size: 100%;
+  }  
+  body .page{
+   size: 100%;
+  }
+  .burger{
+      display: block;
+  }
+  
+}
+.onglets{
+    transform: translateX(0);
+} 
+
+*/
