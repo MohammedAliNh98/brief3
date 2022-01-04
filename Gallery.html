@@ -4,24 +4,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Site complet moderne</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+  <button  class="mobile-nav-toggle" aria-controls="onglets" aria-expanded="false" >
+    <span class="sr-only"></span>
+   </button>
 <section class="page">
 <nav>  
   <img src="logo1.png" id="logoo">
-  <div class="onglets">
+  <div class="onglets" data-visible="false" >
     <a  href="HOME.html"    id="a1">Home</a>
-    <a  href="about.html"   id="a2">Services </a>
-    <a  href="contact.html" id="a3">Contact us</a>
-    <a  href="gallry.html"  id="a4">Gallery</a>
+    <a  href="Servises.html"   id="a2">Services </a>
+    <a  href="Contact.html" id="a3">Contact us</a>
+    <a  href="Gallery.html"  id="a4">Gallery</a>
   </div>
  </nav> 
- <!--<label for="" class="icon"></label>-->
  <i class="fas fa-bars"></i>
- <header>
-      <h1>Agence de location de tout type de véhicules.</h1>
-</header>
 </section>
+<!-- <input type="radio" name="photos" id="check1" checked>
+<input type="radio" name="photos" id="check2" >
+<input type="radio" name="photos" id="check3" >
+<input type="radio" name="photos" id="check4" >
+<input type="radio" name="photos" id="check5" > -->
+<nav>  
+  <div class="Carsplans" id="topcontent" >
+    <a href="Gallery.html"  class="aall"  > All</a>
+    <a href="Cars.html"     class="aall"  > Cars</a>
+    <a href="plans.html"     class="aall"  > Plans </a>
+    <a href="Trafics.html"     class="aall"  > Trafics</a>
+  </div>
+ </nav> 
+<div class="container" >
+  <div class="grandpa">
+  <img src="images/1.jpg" width="30%" class="planscars sport">
+  <img src="images/2.jpg" width="30%" class="planscars  sport">
+  <img src="images/3.jpg" width="30%"  class="planscars sport">
+  <img src="images/4.jpg" width="30%" class="planscars  sport">
+  <img src="images/5.jpg" width="30%" class="planscars sport">
+  <img src="images/6.jpg" width="30%" class="planscars family">
+  <img src="images/7.jpg" width="30%" class="planscars family">
+  <img src="images/8.jpg" width="30%" class="planscars family">
+  <img src="images/9.jpg" width="30%" class="planscars Plans">
+  <img src="images/10.jpg" width="30%" class="planscars Plans">
+  <img src="images/11.jpg" width="30%" class="planscars Plans">
+ 
+  <img src="images/13.jpg" width="30%" class="planscars">
+  </div> 
+</div>
 <footer>
     <h5>Des questions ? Appelez le 0474-998-740</h5>
     <div class="colonnes">
@@ -53,5 +83,6 @@
     </div>
     <p>moroccancoder, morocco</p>
   </footer>
+  <script src="nav.js" defer></script>
 </body>
 </html>
