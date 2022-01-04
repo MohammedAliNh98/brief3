@@ -1,0 +1,72 @@
+  
+    
+       body{
+        box-sizing: border-box;
+       }
+     .grandpa{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+       
+      }
+   
+      .Carsplans{
+          width: 100%;
+      }
+      
+      .Carsplans{
+          display:flex;
+          flex-wrap:wrap;
+          padding: 10px ;
+          justify-content: center;
+      }
+      .aall{
+        margin: 10PX;
+        color: white;
+      }
+      .planscars{
+     margin: 10PX;
+     border-radius: 2px;
+     box-shadow: 5px 5px 5px #34495e;
+      }
+      input{
+        display: none;
+    }
+    .aall:hover{
+      color: aqua;
+      cursor:pointer;
+    }
+    .planscars{
+      content: "photo gallery";
+      z-index: 100 !important;
+    }
+    #check1:checked ~ .container .grandpa .planscars{
+      opacity: 1;
+      transform: scale(1);
+      position: relative;
+    }
+    #check2:checked ~ .container .grandpa .sport{
+      opacity: 1;
+      transform: scale(1);
+      position: relative;
+    }
+    #check3:checked ~ .container .grandpa .family{
+      opacity: 0;
+      transform: scale(0);
+      position: absolute;
+
+    }
+    
+
+    @media screen and (max-width:617px){
+      .planscars{
+        width: 45%;
+      
+      }
+    }
+    @media screen and (max-width:416px){
+      .planscars{
+        width: 90%;
+      
+      }
+    }
